@@ -30,7 +30,7 @@ google_drive_paths = {
     "models/supergirl.pt": "https://drive.google.com/uc?id=1L0y9IYgzLNzB-33xTpXpecsKU-t9DpVC",
     "models/supergirl_preserve_color.pt": "https://drive.google.com/uc?id=1VmKGuvThWHym7YuayXxjv0fSn32lfDpE",
 }
-
+google_drive_paths.keys()
 @torch.no_grad()
 def load_model(generator, model_file_path):
     ensure_checkpoint_exists(model_file_path)

@@ -34,9 +34,10 @@
   添加AdaIN归一化层和encoder decoder模块
 
 - 替换L1 Loss或尝试使用其他evaluation metric
-
-  
-
 ## Imagine Generation
 
-原版使用e4e_projection作GAN Inversion，然后丢给Generatorzuo作图片生成，在此不作其他trick。
+原版与训练时的策略相同，使用e4e_projection作GAN Inversion，然后丢给Generatorzuo作图片生成，在此不作其他trick。
+
+## Implemented Optimization work
+
+使用MS-SSIM Loss与L1 Loss相结合作为最终loss
